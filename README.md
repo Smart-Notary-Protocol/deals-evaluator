@@ -53,4 +53,24 @@ for example:
 1. We need to define how the score will be calculated and what tiers we can put there
 2. We need to define how to update the smart contract in the most gas-convenient way
 
+## Conditions from CID checker
+
+having this [comment](https://github.com/filecoin-project/filecoin-plus-large-datasets/issues/982#issuecomment-1352815406) as example.
+
+### SP distribution
+
+For most of the datacap application, below restrictions should apply:
+
+- Storage provider should not exceed 25% of total datacap.
+- Storage provider should not be storing duplicate data for more than 20%.
+- Storage provider should have published its public IP address.
+- All storage providers should be located in different regions.
+
+### Deal Data Replication
+
+- No more than 25% of unique data are stored with less than 4 providers
+
+### Deal Data Shared with other Clients
+
+- different applications owns different data and should not resolve to the same CID
 

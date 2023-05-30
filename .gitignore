@@ -4,3 +4,4 @@ env
 myenv
 .env
 lib
+.DS_Store
