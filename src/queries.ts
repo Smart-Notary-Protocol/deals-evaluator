@@ -1,3 +1,6 @@
+/**
+@dev want client address and epoch
+ *  */
 export const ProviderDistributionQuery = `
       WITH miner_pieces AS (SELECT provider,
                                    piece_cid,
@@ -24,7 +27,10 @@ export const ProviderDistributionQuery = `
       FROM miners
       ORDER BY total_deal_size DESC`
 
-  export const ReplicaDistributionQuery = `
+/**
+@dev want client address and epoch
+ *  */
+export const ReplicaDistributionQuery = `
       WITH replicas AS (SELECT COUNT(DISTINCT provider) AS num_of_replicas,
                                SUM(piece_size)          AS total_deal_size,
                                MAX(piece_size)          AS piece_size,
@@ -45,7 +51,10 @@ export const ProviderDistributionQuery = `
       GROUP BY num_of_replicas
       ORDER BY num_of_replicas ASC`
 
-  export const CidSharingQuery = `
+/**
+@dev want client address
+ *  */
+export const CidSharingQuery = `
       WITH cids AS (SELECT DISTINCT piece_cid
                     FROM current_state,
                          client_mapping
