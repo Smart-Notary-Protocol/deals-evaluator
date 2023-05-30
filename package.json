@@ -1,0 +1,35 @@
+{
+  "name": "deals-evaluator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smart-Notary-Protocol/deals-evaluator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smart-Notary-Protocol/deals-evaluator/issues"
+  },
+  "homepage": "https://github.com/Smart-Notary-Protocol/deals-evaluator#readme",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/pg": "^8.10.1",
+    "@types/stream-json": "^1.7.3",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "event-iterator": "^2.0.0",
+    "fs-extra": "^11.1.1",
+    "node-zstandard": "^1.2.4",
+    "pg": "^8.11.0",
+    "stream-json": "^1.7.5"
+  }
+}

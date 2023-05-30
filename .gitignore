@@ -1,0 +1,6 @@
+node_modules
+/python
+env
+myenv
+.env
+lib
