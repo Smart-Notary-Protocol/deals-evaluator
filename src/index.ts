@@ -11,13 +11,6 @@ const dbConfig = {
   port: config.port,
 };
 
-console.log( {
-   user: config.user,
-  host: config.host,
-  database: config.database,
-  password:config.password,
-  port: config.port,
-})
 
 // Create a new instance of the connection pool
 const pool = new Pool(dbConfig);
